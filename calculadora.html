@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+    <title>Calculadora</title>
+    <link rel="icon" type="image/x-icon" href="assets/calculadora.png" />
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+<header>
+    <h1 class="site-heading text-center text-faded d-none d-lg-block">
+        <span class="site-heading-upper text-primary mb-3">Si se puede imaginar,</span>
+        <span class="site-heading-lower">se puede programar</span>
+    </h1>
+</header>
+<!-- Navigation-->
+<nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
+    <div class="container">
+        <a class="navbar-brand text-uppercase fw-bold d-lg-none" href="index.html">Scarleth Rawesh</a>
+        <button class="navbar-toggler"  data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="index.html">Inicio</a></li>
+                <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="preguntasfrecuentes.html">Preguntas</a></li>
+                <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="conocimientos.html">Conocimientos Profesionales</a></li>
+                <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="doc.html">Documentación</a></li>
+                <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="trabajos.html">Trabajos</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<body>
+    <section class="page-section about-heading">
+        <div class="container">
+            <div class="about-heading-content mt-5">
+                <div class="row">
+                    <div class="col-xl-9 col-lg-10 mx-auto">
+                        <div class="bg-faded rounded p-2">
+                            <h2 class="section-heading mb-4">
+                                <div class= "container text-center rounded-3 cta-inner p-10 w-75 h-75 bg-faded">
+
+                                    <div class="row m-10 mt-2">
+                                        <div class="col lg-2">
+                                        <div class="position-relative col lg-8 mt-4">
+                                            <input type="text" class="form-control text-center" id="txt-numero" value="">
+                                                <span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle position-relative" id="lbl-signo">
+                                                    signo
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="row m-2">
+                                        <div class="col m-1">
+                                
+                                            <input  type="button" class="btn btn-primary rounded" value="√" id="btn-Raiz"> 
+                                            <input  type="button" class="btn btn-primary rounded" value="ln" id="btn-Ln">
+                                            <input  type="button" class="btn btn-primary rounded" value="log" id="btn-log">
+                                            <input  type="button" class="btn btn-primary rounded" value="x2" id="btn-potencia">
+                                            <input  type="button" class="btn btn-primary rounded" value="!" id="btn-factorial">
+                                
+                                        </div>
+                                    </div>
+                                
+                                    <div class="row m-2">
+                                        <div class="col m-1">
+                                
+                                            <input  type="button" class="btn btn-primary  rounded" value="7" id="btn-7">
+                                            <input  type="button" class="btn btn-primary  rounded" value="8" id="btn-8">
+                                            <input  type="button" class="btn btn-primary  rounded" value="9" id="btn-9">
+                                            <input  type="button" class="btn btn-primary  rounded" value="DEL" id="btn-DEL">
+                                            <input  type="button" class="btn btn-primary  rounded" value="AC" id="btn-AC">
+                                            
+                                        </div>
+                                    </div>
+                                
+                                    <div class="row m-2">
+                                        <div class="col m-1">
+                                
+                                            <input  type="button" class="btn btn-primary  rounded" value="4" id="btn-4">
+                                            <input  type="button" class="btn btn-primary  rounded" value="5" id="btn-5">
+                                            <input  type="button" class="btn btn-primary  rounded" value="6" id="btn-6">
+                                            <input  type="button" class="btn btn-primary  rounded" value="*" id="btn-multiplicar">
+                                            <input  type="button" class="btn btn-primary  rounded" value="/" id="btn-división">
+                                   
+                                        </div>
+                                    </div>
+                                
+                                    <div class="row m-2 ">
+                                        <div class="col m-1">
+                                
+                                            <input  type="button" class="btn btn-primary  rounded" value="1" id="btn-1">
+                                            <input  type="button" class="btn btn-primary  rounded" value="2" id="btn-2">
+                                            <input  type="button" class="btn btn-primary  rounded" value="3" id="btn-3">
+                                            <input  type="button" class="btn btn-primary  rounded" value="+" id="btn-suma">
+                                            <input  type="button" class="btn btn-primary  rounded" value="-" id="btn-resta">
+                                   
+                                        </div>
+                                    </div>
+                                
+                                    <div class="row m-2 ">
+                                        <div class="col m-1">
+                                
+                                            <input  type="button" class="btn btn-primary  rounded" value="0" id="btn-0">
+                                            <input  type="button" class="btn btn-primary  rounded" value="." id="btn-punto">
+                                            <input  type="button" class="btn btn-primary  rounded" value="%" id="btn-porsentaje">
+                                            <input  type="button" class="btn btn-primary  rounded" value="Ans" id="btn-answer">
+                                            <input  type="button" class="btn btn-primary  rounded" value="=" id="btn-igual">
+                                   
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- Footer-->
+<footer class="footer text-faded text-center py-5 mt-5">
+    <div class="container"><p class="m-0 small">Copyright &copy; Your Website 2021</p></div>
+    <div>Iconos diseñados por <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.es/" title="Flaticon">www.flaticon.es</a></div>
+    <div>Foto de Kaboompics en <a href="https://www.pexels.com/">Pexels</a></div>  
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
+    <script src="./js/app.js"> </script>
+</body>
+</html>
