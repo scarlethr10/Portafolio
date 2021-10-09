@@ -1,0 +1,75 @@
+body {
+	background-color: pink;
+
+   background:
+        linear-gradient(
+               rgba(255,0,0,30%),
+               rgba(0,255,0,20%),
+               rgba(255,255,255,10%)
+        	) no-repeat,
+            url(img/pizzeria.jpg);
+            background-size: cover;
+            /* Imagen de:https://www.osteriaviastato.com/pizzeria/*/ 
+            height: 1000px;
+
+}
+
+h1 {background-color: red;
+	color: white;
+	text-align: center;
+}
+
+ul{
+	/*border-width: 2px;
+	border-style: solid;
+	border-color: black;*/
+	float: right;
+	width: 50%;
+	padding:0px;
+	text-align: center;
+}
+
+li{
+	/*border: 1px solid grey;*/
+	text-decoration: none;
+	text-align: center;
+	width: 120px;
+	/*margin: auto;*/
+	display: inline-block;
+	background-color: white;
+	border-radius: 6px;
+}
+
+a{
+	text-decoration: none;
+	font-family: 'Architects Daughter';
+	font-size: 20px;
+	color: red;
+	display: inherit;
+	width:120px;
+	border-radius: 5px 10px;
+}
+
+a:hover {
+    color: white;
+    background-color: black ;
+
+}
+
+div {
+    width: 30%; /*ancho*/
+    height: 400px; /*alto*/
+    background-color: black;
+    /*opacity: 90%;*/
+    color: white; 
+    padding-top: 25px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+img {
+	height: 100px;
+	left: 10px;
+	top: 5px;
+	z-index: 1;
+}
